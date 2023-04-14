@@ -99,6 +99,8 @@
         android:text="@string/next"
         android:textColor="@color/blue"
         android:textSize="17sp"
+        app:drawableEndCompat="@drawable/forward_arrow"
+        android:padding="10dp"
         app:layout_constraintBottom_toBottomOf="@id/skip_btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"

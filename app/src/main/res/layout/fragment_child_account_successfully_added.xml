@@ -69,6 +69,7 @@
         android:textColor="@color/blue"
         android:textSize="15sp"
         android:padding="10dp"
+        app:drawableEndCompat="@drawable/forward_arrow"
         app:layout_constraintBottom_toBottomOf="@id/add_other_child_btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
