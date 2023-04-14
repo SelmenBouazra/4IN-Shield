@@ -24,7 +24,7 @@
         android:layout_marginTop="50dp"
         android:layout_marginStart="20dp"
         android:textSize="22sp"
-        android:text="Last Alerts"
+        android:text="@string/last_alerts"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"/>
 

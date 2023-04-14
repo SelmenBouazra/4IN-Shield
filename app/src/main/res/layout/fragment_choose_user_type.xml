@@ -13,7 +13,7 @@
         android:id="@+id/label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Who is going to use this device?"
+        android:text="@string/who_is_going"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="25sp"

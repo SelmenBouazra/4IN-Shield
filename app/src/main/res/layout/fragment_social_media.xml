@@ -31,7 +31,7 @@
         android:layout_marginTop="50dp"
         android:layout_marginStart="20dp"
         android:textSize="22sp"
-        android:text="Mental State"
+        android:text="@string/mental_state"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"/>
 
@@ -58,7 +58,7 @@
         android:layout_marginTop="50dp"
         android:layout_marginStart="20dp"
         android:textSize="22sp"
-        android:text="Last social media activites"
+        android:text="@string/last_social_media_activites"
         app:layout_constraintTop_toBottomOf="@id/barChart"
         app:layout_constraintStart_toStartOf="parent"/>
 

@@ -10,7 +10,7 @@
         android:id="@+id/last_alert_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Toxic comment!"
+        android:text="@string/toxic_comment"
         android:textColor="@color/red"
         android:textSize="17sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -21,7 +21,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
-        android:text="Mama always said life was like a box of chocolates. You never know what…"
+        android:text="@string/mama_always_said"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="@+id/last_alert_label"
         app:layout_constraintTop_toBottomOf="@id/last_alert_label" />
