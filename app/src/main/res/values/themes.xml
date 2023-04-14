@@ -14,10 +14,6 @@
         <!-- Customize your theme here. -->
     </style>
 
-    <style name="textStyle">
-        <item name="android:textColor">@color/white</item>
-    </style>
-
     <style name="Theme.4INShield.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
@@ -27,7 +23,4 @@
 
     <style name="Theme.4INShield.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
-    <style name="TabTextAppearance" parent="TextAppearance.Design.Tab">
-        <item name="android:textSize">18sp</item>
-    </style>
 </resources>

@@ -29,7 +29,7 @@ public class AuthenticationFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-      //  initClick();
+        initClick();
     }
 
     @Override
@@ -39,17 +39,17 @@ public class AuthenticationFragment extends Fragment {
     }
 
     private void initClick(){
+        binding.emailMethode.container.setOnClickListener(view -> {
         NavController navController = Navigation.findNavController(requireActivity(), R.id.auth_nav_host_fragment);
-
-/*        binding.emailMethode.container.setOnClickListener(view -> {
             NavDirections action = AuthenticationFragmentDirections.actionAuthenticationFragmentToSignInFragment();
             navController.navigate(action);
         });
 
         binding.signUp.setOnClickListener(view -> {
+        NavController navController = Navigation.findNavController(requireActivity(), R.id.auth_nav_host_fragment);
             NavDirections action = AuthenticationFragmentDirections.actionAuthenticationFragmentToSignUpFragment();
             navController.navigate(action);
-        });*/
+        });
 
     }
 }
