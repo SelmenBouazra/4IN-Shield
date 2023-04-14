@@ -20,7 +20,7 @@
         android:id="@+id/container"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:background="@drawable/method_bg"
+        android:background="@drawable/alert_bg"
         app:layout_constraintTop_toTopOf="@id/last_alerts_label"
         app:layout_constraintBottom_toBottomOf="@id/last_alerts_rv"/>
 
@@ -29,6 +29,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
+        android:layout_marginStart="20dp"
         android:textSize="22sp"
         android:text="Last Alerts"
         app:layout_constraintTop_toBottomOf="@id/rapport_rv"

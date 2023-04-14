@@ -3,8 +3,72 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingHorizontal="30dp"
+    android:paddingTop="10dp"
+    tools:background="@color/blue"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.home.SocialMediaFragment">
 
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".5"/>
 
+    <View
+        android:id="@+id/mental_state_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/alert_bg"
+        app:layout_constraintTop_toTopOf="@id/mental_state"
+        app:layout_constraintBottom_toBottomOf="@id/barChart"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/mental_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="20dp"
+        android:textSize="22sp"
+        android:text="Mental State"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/barChart"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/mental_state"
+        app:layout_constraintBottom_toBottomOf="@id/center"
+        android:layout_marginTop="10dp" />
+
+    <View
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/alert_bg"
+        app:layout_constraintTop_toTopOf="@id/last_activity_label"
+        app:layout_constraintBottom_toBottomOf="@id/last_activity_rv"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/last_activity_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="20dp"
+        android:textSize="22sp"
+        android:text="Last social media activites"
+        app:layout_constraintTop_toBottomOf="@id/barChart"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/last_activity_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:itemCount="4"
+        tools:listitem="@layout/last_alert_rapport_item"
+        app:layout_constraintTop_toBottomOf="@+id/last_activity_label"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

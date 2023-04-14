@@ -39,15 +39,13 @@ public class DashboardFragment extends Fragment {
 
 
         new TabLayoutMediator(binding.tabLayout, binding.viewPager,
-                (tab, position) ->
-                        tab.setText(DashBoardDateFilter.values()[position].name())
+                (tab, position) -> tab.setText(DashBoardDateFilter.values()[position].name())
         ).attach();
 
         binding.tabLayout.setBackground(new ColorDrawable(Color.TRANSPARENT));
-        binding.tabLayout.setTabTextColors(Color.WHITE, Color.BLUE);
+        binding.tabLayout.setTabTextColors(Color.LTGRAY, Color.BLUE);
 
-
-
+       // binding.tabLayout.setTabTextColors(Color.LTGRAY, Color.argb(0,63,119,182));
     }
 
     @Override
