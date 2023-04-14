@@ -4,20 +4,20 @@
     <item
         android:id="@+id/dashboardFragment2"
         android:title="DASHBOARD"
-        android:icon="@drawable/ic_launcher_background"/>
+        android:icon="@drawable/rectangle"/>
 
     <item
         android:id="@+id/phoneUsageFragment"
         android:title="PHONE USAGE"
-        android:icon="@drawable/ic_launcher_background"/>
+        android:icon="@drawable/rectangle"/>
 
     <item
         android:id="@+id/socialMediaFragment"
         android:title="SOCIAL MEDIA"
-        android:icon="@drawable/ic_launcher_background"/>
+        android:icon="@drawable/rectangle"/>
 
     <item
         android:id="@+id/alertFragment"
         android:title="ALERTS"
-        android:icon="@drawable/ic_launcher_background"/>
+        android:icon="@drawable/rectangle"/>
 </menu>

@@ -69,7 +69,7 @@ public class PhoneUsageFragment extends Fragment {
         binding.barChart.invalidate();
 
         binding.barChart.getXAxis().setPosition(XAxis.XAxisPosition.BOTTOM);
-        binding.barChart.animateY(1400, Easing.EaseInOutSine);
+        binding.barChart.animateY(400, Easing.EaseInOutSine);
         binding.barChart.setDrawMarkers(false);
         binding.barChart.getXAxis().setDrawAxisLine(false);
         binding.barChart.getAxisLeft().setDrawLabels(false);
