@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/dashboardFragment2"
+        android:title="DASHBOARD"
+        android:icon="@drawable/ic_launcher_background"/>
+
+    <item
+        android:id="@+id/phoneUsageFragment"
+        android:title="PHONE USAGE"
+        android:icon="@drawable/ic_launcher_background"/>
+
+    <item
+        android:id="@+id/socialMediaFragment"
+        android:title="SOCIAL MEDIA"
+        android:icon="@drawable/ic_launcher_background"/>
+
+    <item
+        android:id="@+id/alertFragment"
+        android:title="ALERTS"
+        android:icon="@drawable/ic_launcher_background"/>
+</menu>

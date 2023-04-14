@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/auth_nav_graph"
+    app:startDestination="@id/authenticationFragment">
+
+    <fragment
+        android:id="@+id/authenticationFragment"
+        android:name="tn.mobile.a4inshield.ui.auth.AuthenticationFragment"
+        android:label="fragment_authentication"
+        tools:layout="@layout/fragment_authentication" >
+        <action
+            android:id="@+id/action_authenticationFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+        <action
+            android:id="@+id/action_authenticationFragment_to_signInFragment"
+            app:destination="@id/signInFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signInFragment"
+        android:name="tn.mobile.a4inshield.ui.auth.SignInFragment"
+        android:label="fragment_sign_in"
+        tools:layout="@layout/fragment_sign_in" />
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="tn.mobile.a4inshield.ui.auth.SignUpFragment"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" />
+    <fragment
+        android:id="@+id/chooseUserTypeFragment"
+        android:name="tn.mobile.a4inshield.ui.auth.ChooseUserTypeFragment"
+        android:label="fragment_choose_user_type"
+        tools:layout="@layout/fragment_choose_user_type" />
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="tn.mobile.a4inshield.ui.auth.StartFragment"
+        android:label="fragment_start"
+        tools:layout="@layout/fragment_start" />
+    <fragment
+        android:id="@+id/addSocialMediaAccountFragment"
+        android:name="tn.mobile.a4inshield.ui.auth.AddSocialMediaAccountFragment"
+        android:label="fragment_add_social_media_account"
+        tools:layout="@layout/fragment_add_social_media_account" />
+    <fragment
+        android:id="@+id/socialAccountSuccessfullyAddedFragment"
+        android:name="tn.mobile.a4inshield.ui.auth.SocialAccountSuccessfullyAddedFragment"
+        android:label="fragment_social_account_successfully_added"
+        tools:layout="@layout/fragment_social_account_successfully_added" />
+    <fragment
+        android:id="@+id/addChildInformationFragment"
+        android:name="tn.mobile.a4inshield.ui.auth.AddChildInformationFragment"
+        android:label="fragment_add_child_information"
+        tools:layout="@layout/fragment_add_child_information" />
+    <fragment
+        android:id="@+id/childAccountSuccessfullyAddedFragment"
+        android:name="tn.mobile.a4inshield.ui.auth.ChildAccountSuccessfullyAddedFragment"
+        android:label="fragment_child_account_successfully_added"
+        tools:layout="@layout/fragment_child_account_successfully_added" />
+    <fragment
+        android:id="@+id/goToDashboardFragment"
+        android:name="tn.mobile.a4inshield.ui.auth.GoToDashboardFragment"
+        android:label="fragment_go_to_dashboard"
+        tools:layout="@layout/fragment_go_to_dashboard" />
+    <fragment
+        android:id="@+id/addChildDeviceFragment"
+        android:name="tn.mobile.a4inshield.ui.auth.AddChildDeviceFragment"
+        android:label="fragment_add_child_device"
+        tools:layout="@layout/fragment_add_child_device" />
+</navigation>

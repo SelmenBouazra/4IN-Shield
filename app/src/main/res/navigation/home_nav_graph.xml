@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_nav_graph"
+    app:startDestination="@id/dashboardFragment2">
+
+    <fragment
+        android:id="@+id/dashboardFragment2"
+        android:name="tn.mobile.a4inshield.ui.home.DashboardFragment"
+        android:label="fragment_dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+    <fragment
+        android:id="@+id/phoneUsageFragment"
+        android:name="tn.mobile.a4inshield.ui.home.PhoneUsageFragment"
+        android:label="fragment_phone_usage"
+        tools:layout="@layout/fragment_phone_usage" />
+    <fragment
+        android:id="@+id/socialMediaFragment"
+        android:name="tn.mobile.a4inshield.ui.home.SocialMediaFragment"
+        android:label="fragment_social_media"
+        tools:layout="@layout/fragment_social_media" />
+    <fragment
+        android:id="@+id/alertFragment"
+        android:name="tn.mobile.a4inshield.ui.home.AlertFragment"
+        android:label="fragment_alert"
+        tools:layout="@layout/fragment_alert" />
+</navigation>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:padding="10dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/last_alert_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Toxic comment!"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/last_alert_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Mama always said life was like a box of chocolates. You never know what…"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/last_alert_label"
+        app:layout_constraintTop_toBottomOf="@id/last_alert_label" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
